@@ -1,5 +1,6 @@
 .product-category {
     margin-bottom: 50px;
+    border-radius:10px ;
 }
 
 .product-grid {
@@ -7,7 +8,8 @@
     flex-wrap: wrap;
     gap: 20px;
 	overflow-y: scroll; 
-    max-height: 600px; 
+    max-height: 600px;
+    border-radius:10px ;
 }
 
 .product {
@@ -134,6 +136,8 @@ body {
     padding: 20px;
     background: url('background_image_path.jpg') no-repeat center center fixed;
     background-size: cover;
+
+
 	
 }
 
@@ -188,6 +192,56 @@ body {
 	margin-bottom: 10px;
 	
 }
+
+button{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+.product-options select[id^="size-"] {
+    background-color:rgba(255, 255, 255, 0.3);
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+.product-options select[id^="color-"] {
+    background-color:rgba(255, 255, 255, 0.3);
+    color: #000000;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.product-options {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    max-width: 250px;
+}
+
+.product-options label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.product-options select {
+    background-color:rgba(255, 255, 255, 0.3);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+}
+
+
 
 
   
